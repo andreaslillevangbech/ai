@@ -1,3 +1,6 @@
+## Geohotz' implementation
+
+"
 Implementing MuZero without being a savage and spam programming
 
 Three parts:
@@ -12,4 +15,4 @@ Three parts:
 
 3. Training
   Experience replay
-
+"
