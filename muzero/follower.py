@@ -20,6 +20,8 @@ class Follower():
 
   class action_space():
     n = 2
+    def randint(self, n):
+      return random.randint(0, n-1)
     
   def step(self, act):
     if act == self.state[1]:
@@ -27,8 +29,10 @@ class Follower():
     else:
       rew = 0
     self.n += 1
-    if self.n == 3:
+    if self.n == 5:
       self.done = True
     self.state = [self.n,random.randint(0,1)]
     return self.state, rew, self.done, None
   
+  def close(self):
+    pass
