@@ -1,0 +1,11 @@
+Understanding MuZero
+
+------- 1. -------
+Model is 
+s_0 = h(o_1...o_t)
+p, v = f(s_0)
+
+From o_t and pi_t+1 the environment gives o_t+1,
+h takes in o_1 ... o_t+1 and gives a new s_0
+
+2. Unrolled for K steps

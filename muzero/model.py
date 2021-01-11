@@ -24,6 +24,8 @@ def reformat_batch(batch, a_dim, remove_policy=False):
     y = []
     for ll in [list(x) for x in outs]:
       y += ll
+    # training batch. each y in Y is target in game. Y is list of games or "episodes"
+    # each x in X is input to network
     X.append(x)
     Y.append(y)
   X = bstack(X)

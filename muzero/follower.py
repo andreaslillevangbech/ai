@@ -19,8 +19,9 @@ class Follower():
     shape = (2,)
 
   class action_space():
-    n = 2
-    def randint(self, n):
+    def __init__():
+      self.n = 2
+    def sample(self):
       return random.randint(0, n-1)
     
   def step(self, act):

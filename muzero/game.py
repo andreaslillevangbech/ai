@@ -75,6 +75,8 @@ class ReplayBuffer():
         #x.append(len(g.policies[0])-1)
         x.append(-1)
       return x
+    
+    # Return a sample batch where a batch is an observation, actoins, and targets
     return [(g.make_image(i), xtend(g,g.history[i:i + self.num_unroll_steps], self.num_unroll_steps),
              g.make_target(i, self.num_unroll_steps))
              for (g, i) in game_pos]
